@@ -10,9 +10,9 @@
     <script src="https://cdn.kavrocdn.com/code/8300-cd4273bd-19a9-4a8d-a81d-406f7b2bbabf"></script>
 
     <!-- SEO & Google Ads Compliance 2026 -->
-    <title>Stoffwechsel Balance – Unterstützung für Stoffwechsel, Energie & Verdauung | VitalBalance24</title>
-    <meta name="description" content="Stoffwechsel Balance unterstützt den Stoffwechsel, fördert den Verdauungskomfort und hilft, die tägliche Energie auf natürliche Weise zu erhalten. Geprüfte Qualität.">
-    <meta name="keywords" content="Stoffwechsel Balance, Stoffwechsel unterstützen, natürliche Energie, Verdauungskomfort, Gewichtsmanagement, Stoffwechsel Formel, Stoffwechsel Unterstützung Deutschland Österreich Schweiz">
+    <title>Stoffwechsel Balance – Energie & Vitalität | VitalBalance24</title>
+    <meta name="description" content="Stoffwechsel Balance unterstützt den Stoffwechsel, fördert den Verdauungskomfort und hilft, die tägliche Energie auf natürliche Weise zu erhalten.">
+    <meta name="keywords" content="Stoffwechsel Balance, Stoffwechsel unterstützen, natürliche Energie, Verdauungskomfort, Gewichtsmanagement, Stoffwechsel Formel">
     <meta name="author" content="VitalBalance24">
     <meta name="robots" content="index, follow, max-image-preview:large">
     <link rel="canonical" href="https://vitalbalance24.vercel.app/">
@@ -26,196 +26,200 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- JSON-LD Product (Rich Snippets) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": "Stoffwechsel Balance",
-      "image": "https://vitalbalance24.vercel.app/images/imgi_4_3 Bottles.png",
-      "description": "Stoffwechsel Balance ist eine natürliche Formel zur Unterstützung des Stoffwechsels und der täglichen Energie.",
-      "brand": { "@type": "Brand", "name": "Stoffwechsel Balance" },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://vitalbalance24.vercel.app/",
-        "priceCurrency": "EUR",
-        "price": "49.00",
-        "availability": "https://schema.org/InStock",
-        "seller": { "@type": "Organization", "name": "VitalBalance24" }
-      }
-    }
-    </script>
-
     <!-- Assets de UI -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
+        :root {
+            --brand-deep: #064E3B;
+            --brand-emerald: #10B981;
+            --brand-soft: #F0FDF4;
+        }
+
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
-            background-color: #F8FAFC; /* Cor de fundo mais profissional e limpa (Slate-50) */
+            background-color: var(--brand-soft); 
             -webkit-font-smoothing: antialiased;
+            background-image: radial-gradient(circle at top right, #dcfce7 0%, transparent 40%),
+                              radial-gradient(circle at bottom left, #dcfce7 0%, transparent 40%);
         }
+
         .star-filled { color: #f59e0b; fill: #f59e0b; }
+        
         .hero-section-bg { 
             position: relative; 
-            background-color: #F8FAFC; 
             overflow: hidden; 
             min-height: 85vh; 
             display: flex; 
             align-items: center; 
         }
+
         .hero-overlay-img {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             background-image: url('images/hero-bg-texture.jpg');
-            background-size: cover; background-position: center left; opacity: 0.04; z-index: 0;
+            background-size: cover; background-position: center; opacity: 0.05; z-index: 0;
         }
+
         .hero-container { position: relative; z-index: 10; }
-        .reveal { opacity: 0; transform: translateY(15px); transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+        
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
         
-        /* Estilo da caixa de CTA atualizado para um look mais "Lab" */
+        /* Caixa de CTA com efeito de vidro suave */
         .cta-box { 
-            background: #ffffff; 
-            border-radius: 1.5rem; 
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04); 
-            border: 1px solid #E2E8F0; 
-            padding: 2rem; 
+            background: rgba(255, 255, 255, 0.9); 
+            backdrop-filter: blur(10px);
+            border-radius: 2rem; 
+            box-shadow: 0 20px 50px rgba(6, 78, 59, 0.05); 
+            border: 1px solid rgba(16, 185, 129, 0.1); 
+            padding: 2.5rem; 
             width: 100%; 
         }
         
-        /* Cor de marca: Verde Floresta Profundo (Mais Premium) */
-        .brand-bg { background-color: #064E3B; }
-        .brand-text { color: #064E3B; }
+        .brand-bg { background-color: var(--brand-deep); }
+        .brand-text { color: var(--brand-deep); }
         
-        .btn-shine { position: relative; overflow: hidden; transition: all 0.3s ease; }
-        .btn-shine:hover { transform: translateY(-1px); box-shadow: 0 8px 15px rgba(6, 78, 59, 0.15); }
+        .btn-shine { 
+            position: relative; 
+            overflow: hidden; 
+            transition: all 0.4s ease; 
+            background: linear-gradient(135deg, #064E3B 0%, #065F46 100%);
+        }
+        .btn-shine:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 12px 25px rgba(6, 78, 59, 0.2); 
+            filter: brightness(1.1);
+        }
         
-        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
+        @keyframes float { 0% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-15px) rotate(1deg); } 100% { transform: translateY(0px) rotate(0deg); } }
         .float-anim { animation: float 6s ease-in-out infinite; }
         
+        /* Glow de energia atrás do produto */
+        .vitality-glow {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(40px);
+            z-index: -1;
+        }
+
         .policy-text h4 { font-weight: 800; font-size: 1rem; color: #111; margin-top: 1.5rem; margin-bottom: 0.5rem; text-transform: uppercase; }
         .policy-text p { margin-bottom: 1rem; font-size: 0.875rem; line-height: 1.6; }
     </style>
 </head>
 <body class="text-slate-900">
 
-    <!-- Header minimalista -->
-    <header class="bg-white sticky top-0 z-50 border-b border-slate-100 shadow-sm">
-        <div class="container mx-auto flex justify-between items-center py-3 px-6">
-            <div class="brand-text font-extrabold text-xl tracking-tighter italic">
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-emerald-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="brand-text font-extrabold text-2xl tracking-tighter italic flex items-center gap-2">
+                <div class="w-8 h-8 brand-bg rounded-lg flex items-center justify-center">
+                    <i data-feather="activity" class="text-white w-5 h-5"></i>
+                </div>
                 StoffwechselBalance™
             </div>
-            <div class="hidden md:flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                <i data-feather="check-circle" class="w-3 h-3 text-emerald-500"></i>
-                Premium Qualität
+            <div class="hidden md:flex items-center gap-3 text-[11px] font-bold uppercase tracking-widest text-emerald-800/60">
+                <span class="bg-emerald-100 px-3 py-1 rounded-full text-emerald-700">Premium Labor-Qualität</span>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="order" class="hero-section-bg" aria-label="Bestellabschnitt">
+        <section id="order" class="hero-section-bg">
             <div class="hero-overlay-img"></div>
             
-            <div class="container mx-auto px-6 py-10 lg:py-16 hero-container">
-                <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <div class="container mx-auto px-6 py-12 lg:py-20 hero-container">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     
-                    <!-- Lado Esquerdo: Conteúdo -->
+                    <!-- Lado Esquerdo: Copy -->
                     <div class="lg:col-span-7 text-left reveal flex flex-col items-center lg:items-start order-1">
-                        <!-- Badge de Avaliação mais elegante -->
-                        <div class="bg-slate-100 rounded-full px-3 py-1 mb-6 inline-flex items-center gap-2">
-                            <div class="flex items-center gap-1 text-slate-900 font-bold text-xs">
+                        <div class="bg-emerald-600 text-white rounded-full px-4 py-1 mb-8 inline-flex items-center gap-3 shadow-md">
+                            <div class="flex items-center gap-1 font-bold text-sm">
                                 <span>4.9/5</span>
-                                <div class="flex"><i class="star-filled w-2.5 h-2.5" data-feather="star"></i><i class="star-filled w-2.5 h-2.5" data-feather="star"></i><i class="star-filled w-2.5 h-2.5" data-feather="star"></i><i class="star-filled w-2.5 h-2.5" data-feather="star"></i><i class="star-filled w-2.5 h-2.5" data-feather="star"></i></div>
+                                <div class="flex"><i class="w-3 h-3 fill-white" data-feather="star"></i><i class="w-3 h-3 fill-white" data-feather="star"></i><i class="w-3 h-3 fill-white" data-feather="star"></i><i class="w-3 h-3 fill-white" data-feather="star"></i><i class="w-3 h-3 fill-white" data-feather="star"></i></div>
                             </div>
-                            <div class="w-px h-3 bg-slate-200"></div>
-                            <span class="text-[9px] font-bold uppercase tracking-widest text-slate-500">70% Rabatt</span>
+                            <div class="w-px h-3 bg-white/30"></div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest">50% Rabatt</span>
                         </div>
 
-                        <!-- Headline com peso variável para parecer mais moderno -->
-                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-6 leading-[1.15] tracking-tight text-slate-900 text-center lg:text-left">
-                            Mehr Energie im Alltag <br> <span class="text-emerald-700 font-medium">und Ein Ausgeglichener</span> <br> Stoffwechsel
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-8 leading-[1.1] tracking-tight text-slate-900 text-center lg:text-left">
+                            Mehr Energie im Alltag <br> <span class="brand-text underline decoration-emerald-200 decoration-4 underline-offset-8">und Ein Ausgeglichener</span> <br> Stoffwechsel
                         </h1>
                         
-                        <!-- Subheadline com melhor legibilidade -->
-                        <div class="text-base md:text-lg mb-8 text-slate-600 leading-relaxed max-w-xl text-center lg:text-left">
-                            <p class="mb-3 font-semibold text-slate-800">Spüren Sie den Unterschied mit einer einfachen täglichen Routine.</p>
-                            <p>StoffwechselBalance unterstützt den Stoffwechsel und die Verdauung auf natürliche Weise – für Ihr tägliches Wohlbefinden.</p>
+                        <div class="text-lg md:text-xl mb-10 text-slate-600 leading-relaxed max-w-2xl text-center lg:text-left">
+                            <p class="mb-4 font-bold text-slate-800">Spüren Sie den Unterschied mit einer einfachen täglichen Routine.</p>
+                            <p>StoffwechselBalance unterstützt den Stoffwechsel and die Verdauung auf natürliche Weise – für Ihr tägliches Wohlbefinden und neue Vitalität.</p>
                         </div>
                         
                         <!-- Mobile Image -->
-                        <div class="lg:hidden flex justify-center items-center w-full mb-8">
-                             <img src="images/imgi_4_3 Bottles.png" 
-                                   alt="[Imagem de frascos de Stoffwechsel Balance]" 
-                                   class="w-full max-w-[260px] h-auto drop-shadow-2xl float-anim">
+                        <div class="lg:hidden flex justify-center items-center w-full mb-10">
+                             <div class="relative">
+                                <div class="vitality-glow"></div>
+                                <img src="images/imgi_4_3 Bottles.png" alt="[Imagem de frascos de Stoffwechsel Balance]" class="w-full max-w-[280px] h-auto drop-shadow-2xl float-anim">
+                             </div>
                         </div>
                         
-                        <!-- Lista de Benefícios (Checklist) -->
-                        <div class="space-y-4 mb-10 w-full lg:w-auto">
-                            <div class="flex items-start gap-3">
-                                <div class="bg-emerald-100 text-emerald-700 rounded-full p-1 flex-shrink-0">
-                                    <i data-feather="check" class="w-3.5 h-3.5" stroke-width="3"></i>
+                        <!-- Checklist -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-12 w-full">
+                            <div class="flex items-start gap-3 bg-white/50 p-4 rounded-xl border border-emerald-100/50">
+                                <div class="bg-emerald-500 text-white rounded-full p-1 flex-shrink-0">
+                                    <i data-feather="check" class="w-4 h-4" stroke-width="3"></i>
                                 </div>
-                                <span class="text-slate-700 font-medium text-sm md:text-base">Unterstützt die natürliche Appetitkontrolle</span>
+                                <span class="text-slate-700 font-semibold text-sm">Natürliche Appetitkontrolle</span>
                             </div>
-                            <div class="flex items-start gap-3">
-                                <div class="bg-emerald-100 text-emerald-700 rounded-full p-1 flex-shrink-0">
-                                    <i data-feather="check" class="w-3.5 h-3.5" stroke-width="3"></i>
+                            <div class="flex items-start gap-3 bg-white/50 p-4 rounded-xl border border-emerald-100/50">
+                                <div class="bg-emerald-500 text-white rounded-full p-1 flex-shrink-0">
+                                    <i data-feather="check" class="w-4 h-4" stroke-width="3"></i>
                                 </div>
-                                <span class="text-slate-700 font-medium text-sm md:text-base">11 hochwertige, wissenschaftlich ausgewählte Inhaltsstoffe</span>
+                                <span class="text-slate-700 font-semibold text-sm">11 Hochwertige Wirkstoffe</span>
                             </div>
-                            <div class="flex items-start gap-3">
-                                <div class="bg-emerald-100 text-emerald-700 rounded-full p-1 flex-shrink-0">
-                                    <i data-feather="check" class="w-3.5 h-3.5" stroke-width="3"></i>
+                            <div class="flex items-start gap-3 bg-white/50 p-4 rounded-xl border border-emerald-100/50">
+                                <div class="bg-emerald-500 text-white rounded-full p-1 flex-shrink-0">
+                                    <i data-feather="check" class="w-4 h-4" stroke-width="3"></i>
                                 </div>
-                                <span class="text-slate-700 font-medium text-sm md:text-base">60 Tage risikofreie Zufriedenheitsgarantie</span>
+                                <span class="text-slate-700 font-semibold text-sm">60 Tage Zufriedenheit</span>
                             </div>
                         </div>
 
-                        <!-- CTA Box Profissional -->
-                        <div class="cta-box border border-slate-200 max-w-lg">
-                            <p class="font-bold text-slate-400 uppercase tracking-widest text-[9px] mb-5 text-center lg:text-left">Wählen Sie Ihr Lieferland:</p>
+                        <!-- CTA Box -->
+                        <div class="cta-box">
+                            <p class="font-extrabold text-emerald-800 uppercase tracking-widest text-[10px] mb-6 text-center lg:text-left">Jetzt versandkostenfrei bestellen:</p>
                             
-                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-                                <a href="https://mwebora.com/12231/183/3/?" class="btn-shine flex items-center justify-center gap-2 py-3 brand-bg text-white rounded-lg font-bold text-xs">
-                                    <span>DE</span>
-                                    <i data-feather="arrow-right" class="w-3 h-3"></i>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                                <a href="https://mwebora.com/12231/183/3/?" class="btn-shine flex flex-col items-center justify-center py-4 text-white rounded-2xl">
+                                    <span class="font-black text-lg leading-none">DE</span>
+                                    <span class="text-[9px] uppercase tracking-tighter opacity-80 mt-1">Deutschland</span>
                                 </a>
-                                <a href="https://mwebora.com/12231/183/3/?" class="btn-shine flex items-center justify-center gap-2 py-3 brand-bg text-white rounded-lg font-bold text-xs">
-                                    <span>AT</span>
-                                    <i data-feather="arrow-right" class="w-3 h-3"></i>
+                                <a href="https://mwebora.com/12231/183/3/?" class="btn-shine flex flex-col items-center justify-center py-4 text-white rounded-2xl">
+                                    <span class="font-black text-lg leading-none">AT</span>
+                                    <span class="text-[9px] uppercase tracking-tighter opacity-80 mt-1">Österreich</span>
                                 </a>
-                                <a href="https://mwebora.com/12231/183/3/?" class="btn-shine flex items-center justify-center gap-2 py-3 brand-bg text-white rounded-lg font-bold text-xs">
-                                    <span>CH</span>
-                                    <i data-feather="arrow-right" class="w-3 h-3"></i>
+                                <a href="https://mwebora.com/12231/183/3/?" class="btn-shine flex flex-col items-center justify-center py-4 text-white rounded-2xl">
+                                    <span class="font-black text-lg leading-none">CH</span>
+                                    <span class="text-[9px] uppercase tracking-tighter opacity-80 mt-1">Schweiz</span>
                                 </a>
                             </div>
 
-                            <!-- Disclaimer após os botões conforme pedido -->
-                            <div class="mt-6 pt-5 border-t border-slate-100">
-                                <p class="text-[9px] text-slate-400 italic leading-normal text-center lg:text-left">
-                                    *Hinweis: Individuelle Ergebnisse können variieren. Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung und einen gesunden Lebensstil.
+                            <div class="mt-8 pt-6 border-t border-emerald-50 flex flex-col sm:flex-row items-center justify-between gap-4">
+                                <p class="text-[10px] text-emerald-900/40 italic leading-snug max-w-[280px] text-center sm:text-left">
+                                    *Hinweis: Individuelle Ergebnisse können variieren. Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung.
                                 </p>
-                            </div>
-
-                            <div class="mt-5 flex justify-center lg:justify-start items-center gap-4 opacity-30 grayscale scale-90">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" class="h-2" alt="Visa">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" class="h-3.5" alt="Mastercard">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-2.5" alt="Paypal">
+                                <div class="flex items-center gap-3 opacity-40 grayscale hover:grayscale-0 transition-all">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" class="h-2.5" alt="Visa">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" class="h-4" alt="Mastercard">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-3" alt="Paypal">
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Lado Direito: Imagem Desktop -->
-                    <div class="lg:col-span-5 hidden lg:flex justify-center items-center reveal order-2">
-                        <div class="relative flex justify-center items-center">
-                            <!-- Brilho de fundo mais discreto -->
-                            <div class="absolute w-[350px] h-[350px] bg-emerald-500/5 rounded-full blur-[60px] -z-10"></div>
-                            <img src="images/imgi_4_3 Bottles.png" 
-                                 alt="[Imagem de frascos de Stoffwechsel Balance]" 
-                                 class="w-full max-w-[460px] h-auto drop-shadow-2xl float-anim">
-                        </div>
+                    <!-- Lado Direito: Desktop Image -->
+                    <div class="lg:col-span-5 hidden lg:flex justify-center items-center reveal order-2 relative">
+                        <div class="vitality-glow"></div>
+                        <img src="images/imgi_4_3 Bottles.png" alt="[Imagem de frascos de Stoffwechsel Balance]" class="w-full max-w-[500px] h-auto drop-shadow-[0_50px_50px_rgba(6,78,59,0.15)] float-anim">
                     </div>
                     
                 </div>
@@ -223,60 +227,40 @@
         </section>
     </main>
 
-    <!-- Rodapé mais estreito e discreto -->
-    <footer class="bg-white text-slate-500 py-10 border-t border-slate-100">
+    <footer class="bg-white/60 text-slate-500 py-12 border-t border-emerald-100">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-[11px]">
-                
-                <!-- Coluna 1: Info Empresa -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-10 text-[11px]">
                 <div class="space-y-3">
-                    <p class="text-slate-900 font-bold uppercase tracking-wider text-[10px]">Impressum</p>
-                    <p class="leading-relaxed">
-                        GedachtnisAktiv Plus<br>
-                        Kleine Esch 669, 2841 MK Moordrecht<br>
-                        Niederlande
-                    </p>
+                    <p class="text-slate-900 font-black uppercase tracking-widest text-[10px]">Impressum</p>
+                    <p class="leading-relaxed">GedachtnisAktiv Plus<br>Kleine Esch 669, 2841 MK Moordrecht<br>Niederlande</p>
                 </div>
-
-                <!-- Coluna 2: Contacto -->
                 <div class="space-y-3">
-                    <p class="text-slate-900 font-bold uppercase tracking-wider text-[10px]">Kontakt</p>
-                    <p class="leading-relaxed">
-                        support@reinheitbalance.store<br>
-                        Mo-Fr: 09:00 - 18:00
-                    </p>
+                    <p class="text-slate-900 font-black uppercase tracking-widest text-[10px]">Kontakt</p>
+                    <p class="leading-relaxed">support@reinheitbalance.store<br>Mo-Fr: 09:00 - 18:00</p>
                 </div>
-
-                <!-- Coluna 3: Garantia -->
                 <div class="space-y-3">
-                    <p class="text-slate-900 font-bold uppercase tracking-wider text-[10px]">Garantie</p>
-                    <p class="leading-relaxed">
-                        60 Tage Geld-zurück-Garantie<br>
-                        Risikofreie Bestellung.
-                    </p>
+                    <p class="text-slate-900 font-black uppercase tracking-widest text-[10px]">Qualität</p>
+                    <p class="leading-relaxed">Laborgeprüfte Reinheit<br>Hergestellt in der EU</p>
                 </div>
-
-                <!-- Coluna 4: Distribuidor Discreto -->
-                <div class="flex flex-col justify-start space-y-3">
-                    <p class="text-slate-900 font-bold uppercase tracking-wider text-[10px]">Status</p>
-                    <div class="flex items-center gap-2 text-slate-400">
-                        <i data-feather="shield" class="w-3 h-3"></i>
-                        <span>Zertifizierter Händler</span>
+                <div class="space-y-3">
+                    <p class="text-slate-900 font-black uppercase tracking-widest text-[10px]">Zertifizierung</p>
+                    <div class="flex items-center gap-2 text-emerald-600 font-bold">
+                        <i data-feather="shield" class="w-3.5 h-3.5"></i>
+                        <span>Autorisierter Händler</span>
                     </div>
                 </div>
             </div>
             
-            <!-- Links de Política em linha -->
-            <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 py-6 border-t border-slate-50 text-[10px] font-bold uppercase tracking-widest text-slate-400">
-                <button onclick="openModal('impressum')" class="hover:text-slate-900 transition-colors">Impressum</button>
-                <button onclick="openModal('terms')" class="hover:text-slate-900 transition-colors">AGB</button>
-                <button onclick="openModal('privacy')" class="hover:text-slate-900 transition-colors">Datenschutz</button>
-                <button onclick="openModal('returns')" class="hover:text-slate-900 transition-colors">Rückgabe</button>
-                <button onclick="openModal('storno')" class="hover:text-slate-900 transition-colors">Stornierung</button>
+            <div class="flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-3 py-6 border-t border-emerald-50 text-[10px] font-extrabold uppercase tracking-widest text-slate-400">
+                <button onclick="openModal('impressum')" class="hover:text-emerald-700 transition-colors">Impressum</button>
+                <button onclick="openModal('terms')" class="hover:text-emerald-700 transition-colors">AGB</button>
+                <button onclick="openModal('privacy')" class="hover:text-emerald-700 transition-colors">Datenschutz</button>
+                <button onclick="openModal('returns')" class="hover:text-emerald-700 transition-colors">Rückgabe</button>
+                <button onclick="openModal('storno')" class="hover:text-emerald-700 transition-colors">Stornierung</button>
             </div>
 
-            <div class="pt-6 text-[9px] text-slate-400 leading-relaxed border-t border-slate-50">
-                <p class="mb-2"><strong>Disclaimer:</strong> Diese Seite ist keine offizielle Präsenz von Google™ oder Meta Inc. StoffwechselBalance™ ist ein Nahrungsergänzungsmittel. Nicht zur Behandlung von Krankheiten bestimmt.</p>
+            <div class="pt-6 text-[10px] text-slate-400 leading-relaxed">
+                <p class="mb-2"><strong>Disclaimer:</strong> Diese Seite ist keine offizielle Präsenz von Google™ oder Meta Inc. StoffwechselBalance™ ist ein Nahrungsergänzungsmittel.</p>
                 <p>&copy; 2025-2026 StoffwechselBalance™. Alle Rechte vorbehalten.</p>
             </div>
         </div>
@@ -284,21 +268,21 @@
 
     <!-- MODAL -->
     <div id="policy-modal" class="fixed inset-0 z-[100] hidden">
-        <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="fixed inset-0 bg-emerald-950/40 backdrop-blur-md" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
             <div class="flex min-h-full items-center justify-center p-4">
-                <div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-2xl transition-all sm:w-full sm:max-w-2xl max-h-[85vh] flex flex-col">
-                    <div class="bg-white px-6 py-4 border-b border-slate-100 flex justify-between items-center sticky top-0 z-20">
-                        <h3 class="text-sm font-bold text-slate-900 uppercase tracking-widest" id="modal-title">Rechtliche Details</h3>
-                        <button type="button" onclick="closeModal()" class="rounded-full p-2 hover:bg-slate-50 transition-colors">
-                            <i data-feather="x" class="h-4 w-4"></i>
+                <div class="relative transform overflow-hidden rounded-[2.5rem] bg-white text-left shadow-2xl transition-all sm:w-full sm:max-w-2xl max-h-[85vh] flex flex-col">
+                    <div class="bg-white px-8 py-6 border-b border-emerald-50 flex justify-between items-center sticky top-0 z-20">
+                        <h3 class="text-sm font-black text-slate-900 uppercase tracking-widest" id="modal-title">Details</h3>
+                        <button type="button" onclick="closeModal()" class="rounded-full p-2 hover:bg-emerald-50 transition-colors">
+                            <i data-feather="x" class="h-5 w-5"></i>
                         </button>
                     </div>
-                    <div class="px-8 py-8 overflow-y-auto bg-white policy-text">
+                    <div class="px-10 py-10 overflow-y-auto bg-white policy-text">
                         <div id="modal-content-area"></div>
                     </div>
-                    <div class="px-8 py-4 bg-slate-50 flex justify-end">
-                        <button type="button" onclick="closeModal()" class="brand-bg px-6 py-2 rounded-lg text-xs font-bold text-white shadow-sm">Schließen</button>
+                    <div class="px-10 py-6 bg-emerald-50 flex justify-end">
+                        <button type="button" onclick="closeModal()" class="brand-bg px-8 py-3 rounded-2xl text-xs font-bold text-white shadow-lg">Schließen</button>
                     </div>
                 </div>
             </div>
@@ -306,10 +290,8 @@
     </div>
 
     <script>
-        // Inicializar ícones
         feather.replace();
 
-        // Animação de revelação ao rolar
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) entry.target.classList.add('active');
@@ -318,7 +300,6 @@
 
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        // Lógica do Modal
         const modal = document.getElementById('policy-modal');
         const modalTitle = document.getElementById('modal-title');
         const modalContent = document.getElementById('modal-content-area');
@@ -334,38 +315,31 @@
                 `
             },
             terms: { 
-                title: "Allgemeine Geschäftsbedingungen (AGB)", 
+                title: "Allgemeine Geschäftsbedingungen", 
                 content: `
                     <h4>Geltungsbereich</h4>
                     <p>Diese AGB gelten für alle Bestellungen über unsere Website. Mit Abschluss der Bestellung akzeptiert der Kunde diese Bedingungen.</p>
-                    <h4>Vertragsschluss</h4>
-                    <p>Der Vertrag kommt durch die Bestätigung der Bestellung durch uns zustande.</p>
                 ` 
             },
             privacy: { 
-                title: "Datenschutzrichtlinie (DSGVO)", 
+                title: "Datenschutzrichtlinie", 
                 content: `
                     <h4>Datenerhebung</h4>
-                    <p>Wir erheben Daten zur Vertragserfüllung und Kundenbetreuung. Ihre Daten werden SSL-verschlüsselt übertragen.</p>
-                    <h4>Ihre Rechte</h4>
-                    <p>Sie haben das Recht auf Auskunft, Löschung und Sperrung Ihrer Daten gemäß DSGVO.</p>
+                    <p>Wir erheben Daten zur Vertragserfüllung. Ihre Daten werden SSL-verschlüsselt übertragen.</p>
                 ` 
             },
             returns: { 
-                title: "Rückgabebedingungen — 60-Tage-Garantie", 
+                title: "Rückgabebedingungen", 
                 content: `
-                    <p>Wir bieten eine 60-tägige Zufriedenheitsgarantie ab Lieferdatum.</p>
+                    <p>60-tägige Zufriedenheitsgarantie ab Lieferdatum.</p>
                     <h4>Prozess:</h4>
-                    <ul>
-                        <li>Kontaktieren Sie den Support via E-Mail.</li>
-                        <li>Senden Sie die Flaschen an: Kleine Esch 669, 2841 MK Moordrecht, Niederlande.</li>
-                    </ul>
+                    <p>Senden Sie die Flaschen an: Kleine Esch 669, 2841 MK Moordrecht, Niederlande.</p>
                 ` 
             },
             storno: {
                 title: "Stornierung",
                 content: `
-                    <p>Stornierungen sind vor dem Versand möglich. Kontaktieren Sie uns umgehend unter support@reinheitbalance.store.</p>
+                    <p>Stornierungen sind vor dem Versand möglich via support@reinheitbalance.store.</p>
                 `
             }
         };
