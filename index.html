@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="de-DE">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -10,40 +10,11 @@
     <script src="https://api.ornyxa.com/code/8300-7c689631-2151-4726-8ed2-3ebabde518bc"></script>
 
     <!-- SEO Core -->
-    <title>VitaliSlim™ | Lean Metabolism Support for Fat Burning, Appetite Control & Energy</title>
-    <meta name="description" content="VitaliSlim supports lean metabolism, appetite control and natural fat burning using 11 powerful ingredients designed to improve digestion, energy and healthy weight management. 60-day money-back guarantee.">
-    <meta name="keywords" content="VitaliSlim, lean metabolism, metabolism support supplement, appetite control supplement, weight management support, natural fat metabolism, gut health supplement, metabolic support formula, VitaliSlim review">
-    <link rel="canonical" href="https://leanmetabolism.shop/">
+    <title>StoffwechselBalance™ | Mehr Energie & Ausgeglichener Stoffwechsel</title>
+    <meta name="description" content="Spüren Sie den Unterschied mit einer einfachen täglichen Routine. StoffwechselBalance unterstützt den Stoffwechsel und fördert natürliche Energie im Alltag.">
+    <meta name="keywords" content="StoffwechselBalance, Stoffwechsel unterstützen, Fettverbrennung, Appetitkontrolle, Gewichtsmanagement, natürliche Inhaltsstoffe, StoffwechselBalance Erfahrungen">
+    <link rel="canonical" href="https://stoffwechselbalance.shop/">
     <meta name="robots" content="index,follow" />
-
-    <!-- Structured Data (Schema.org) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "name": "Lean Metabolism",
-          "url": "https://leanmetabolism.shop/"
-        },
-        {
-          "@type": "Product",
-          "name": "VitaliSlim",
-          "image": "images/vitalislim1.png",
-          "description": "VitaliSlim is a metabolism support supplement with 11 natural ingredients.",
-          "brand": { "@type": "Brand", "name": "VitaliSlim" },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://leanmetabolism.shop/",
-            "priceCurrency": "USD",
-            "price": "49",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-          }
-        }
-      ]
-    }
-    </script>
 
     <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -53,13 +24,13 @@
     <style>
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
-            background-color: #ffffff; 
+            background-color: #F0FDF4; 
             -webkit-font-smoothing: antialiased;
         }
         .star-filled { color: #f59e0b; fill: #f59e0b; }
         .hero-section-bg { 
             position: relative; 
-            background-color: #ffffff; 
+            background-color: #F0FDF4; 
             overflow: hidden; 
             min-height: 90vh; 
             display: flex; 
@@ -67,145 +38,109 @@
         }
         .hero-overlay-img {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background-image: url('images/imgi_29_fundo.jpg');
-            background-size: cover; 
-            background-position: center left; 
-            opacity: 0.12; 
-            z-index: 0;
+            background-image: url('images/hero-bg-texture.jpg');
+            background-size: cover; background-position: center left; opacity: 0.08; z-index: 0;
         }
         .hero-container { position: relative; z-index: 10; }
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
+        .cta-box { background: #ffffff; border-radius: 2rem; box-shadow: 0 15px 40px rgba(21, 128, 61, 0.08); border: 1px solid rgba(21, 128, 61, 0.1); padding: 2rem; width: 100%; }
         
-        .cta-box {
-            background: #ffffff;
-            border-radius: 2rem;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0,0,0,0.03);
-            padding: 2rem;
-            width: 100%;
-        }
+        .brand-bg { background-color: #15803D; }
+        .brand-text { color: #15803D; }
         
-        .brand-bg { background-color: #239F47; }
-        .brand-text { color: #239F47; }
+        .btn-shine { position: relative; overflow: hidden; transition: all 0.3s ease; }
+        .btn-shine:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(21, 128, 61, 0.2); }
         
-        .btn-shine {
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        .btn-shine:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(35, 159, 71, 0.15);
-            opacity: 0.95;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-12px); }
-            100% { transform: translateY(0px); }
-        }
+        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-12px); } 100% { transform: translateY(0px); } }
         .float-anim { animation: float 5s ease-in-out infinite; }
-        
         .policy-text h4 { font-weight: 800; font-size: 1rem; color: #111; margin-top: 1.5rem; margin-bottom: 0.5rem; text-transform: uppercase; }
         .policy-text p { margin-bottom: 1rem; font-size: 0.875rem; line-height: 1.6; }
-        .policy-text ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; font-size: 0.875rem; }
     </style>
 </head>
 <body class="text-gray-800">
 
     <header class="brand-bg sticky top-0 z-50 border-b border-white/10 shadow-lg">
-        <div class="container mx-auto flex justify-center py-4 px-4">
-            <img src="images/vitalislim-logo.png" alt="VitaliSlim Logo" class="h-9 md:h-11 w-auto">
+        <div class="container mx-auto flex justify-center py-4 px-4 text-white font-extrabold text-2xl tracking-tighter italic">
+            StoffwechselBalance™
         </div>
     </header>
 
     <main>
-        <section id="order" class="hero-section-bg" aria-label="Order Section">
+        <section id="order" class="hero-section-bg" aria-label="Bestellabschnitt">
             <div class="hero-overlay-img"></div>
             
             <div class="container mx-auto px-6 py-10 lg:py-20 hero-container">
                 <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                     
-                    <!-- Text Content (Order 1 for Mobile/Desktop) -->
+                    <!-- Text Content -->
                     <div class="lg:col-span-7 text-left reveal flex flex-col items-center lg:items-start order-1">
                         <!-- Rating Badge -->
-                        <div class="bg-white/80 backdrop-blur shadow-sm border border-gray-100 rounded-full px-4 py-1.5 mb-6 inline-flex items-center gap-3">
+                        <div class="bg-white/90 backdrop-blur shadow-sm border border-green-100 rounded-full px-4 py-1.5 mb-6 inline-flex items-center gap-3">
                             <div class="flex items-center gap-1.5 text-gray-900 font-bold text-sm">
                                 <span>4.9/5</span>
-                                <div class="flex items-center">
-                                    <i class="star-filled w-3 h-3" data-feather="star"></i>
-                                    <i class="star-filled w-3 h-3" data-feather="star"></i>
-                                    <i class="star-filled w-3 h-3" data-feather="star"></i>
-                                    <i class="star-filled w-3 h-3" data-feather="star"></i>
-                                    <i class="star-filled w-3 h-3" data-feather="star"></i>
-                                </div>
+                                <div class="flex"><i class="star-filled w-3 h-3" data-feather="star"></i><i class="star-filled w-3 h-3" data-feather="star"></i><i class="star-filled w-3 h-3" data-feather="star"></i><i class="star-filled w-3 h-3" data-feather="star"></i><i class="star-filled w-3 h-3" data-feather="star"></i></div>
                             </div>
-                            <div class="w-px h-3 bg-gray-200"></div>
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-gray-400">70% Instant Discount Today</span>
+                            <div class="w-px h-3 bg-green-200"></div>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-green-700">70% Sofort-Rabatt</span>
                         </div>
 
                         <!-- HEADLINE -->
-                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold mb-4 lg:mb-6 leading-[1.2] tracking-tight text-gray-900 text-center lg:text-left">
-                            Less Belly Fat,<br> More Energy and<br> Real Control
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-4 lg:mb-6 leading-[1.2] tracking-tight text-gray-900 text-center lg:text-left">
+                            Mehr Energie im Alltag<br> und Ein Ausgeglichener<br> Stoffwechsel
                         </h1>
                         
-                        <!-- SUBHEAD -->
-                        <div class="max-w-xl text-center lg:text-left">
-                            <p class="text-base md:text-xl mb-3 text-gray-500 leading-relaxed font-medium">
-                                Feel the difference with a simple daily routine. VitaliSlim helps reduce cravings, support metabolism, and promote healthy digestion.*
-                            </p>
-                            <p class="text-[10px] text-gray-400 italic mb-8 lg:mb-10">*Results may vary from person to person. This is a dietary supplement.</p>
+                        <!-- SUBHEADLINE -->
+                        <div class="text-base md:text-xl mb-4 text-gray-600 leading-relaxed max-w-xl font-medium text-center lg:text-left">
+                            <p class="mb-3">Spüren Sie den Unterschied mit einer einfachen täglichen Routine.</p>
+                            <p>StoffwechselBalance unterstützt den Stoffwechsel, hilft Heißhunger zu reduzieren und fördert eine gesunde Verdauung – für mehr Wohlbefinden und natürliche Energie im Alltag.*</p>
                         </div>
+                        <p class="text-[10px] text-gray-400 italic mb-8 lg:mb-10 text-center lg:text-left">*Ergebnisse können von Person zu Person variieren.</p>
 
                         <!-- MOBILE ONLY PRODUCT IMAGE -->
                         <div class="lg:hidden flex justify-center items-center w-full mb-8">
-                             <img src="images/vitalislim1.png" 
-                                 alt="VitaliSlim Bottle" 
-                                 class="w-full max-w-[240px] h-auto drop-shadow-[0_30px_30px_rgba(0,0,0,0.1)] float-anim">
+                             <img src="imgi_4_3 Bottles.png" 
+                                   alt="[Bild von StoffwechselBalance Flaschen]" 
+                                   class="w-full max-w-[280px] h-auto drop-shadow-[0_30px_30px_rgba(21,128,61,0.15)] float-anim">
                         </div>
                         
-                        <!-- CHECKLIST -->
+                        <!-- CHECKLIST / BULLET POINTS -->
                         <div class="space-y-4 mb-8 lg:mb-10 w-full lg:w-auto">
-                            <div class="flex items-center gap-4">
-                                <div class="brand-bg rounded-full p-1 shadow-sm flex-shrink-0">
+                            <div class="flex items-start gap-4">
+                                <div class="brand-bg rounded-full p-1 shadow-sm flex-shrink-0 mt-0.5">
                                     <i data-feather="check" class="text-white w-3.5 h-3.5" stroke-width="4"></i>
                                 </div>
-                                <span class="text-gray-700 font-semibold text-sm md:text-base">Control appetite and reduce daily cravings</span>
+                                <span class="text-gray-700 font-semibold text-sm md:text-base">Hilft, den Appetit zu kontrollieren und Heißhunger zu reduzieren</span>
                             </div>
-                            <div class="flex items-center gap-4">
-                                <div class="brand-bg rounded-full p-1 shadow-sm flex-shrink-0">
+                            <div class="flex items-start gap-4">
+                                <div class="brand-bg rounded-full p-1 shadow-sm flex-shrink-0 mt-0.5">
                                     <i data-feather="check" class="text-white w-3.5 h-3.5" stroke-width="4"></i>
                                 </div>
-                                <span class="text-gray-700 font-semibold text-sm md:text-base">11 natural ingredients for metabolic support</span>
+                                <span class="text-gray-700 font-semibold text-sm md:text-base">11 natürliche Inhaltsstoffe – wissenschaftlich ausgewählt</span>
                             </div>
-                            <div class="flex items-center gap-4">
-                                <div class="brand-bg rounded-full p-1 shadow-sm flex-shrink-0">
+                            <div class="flex items-start gap-4">
+                                <div class="brand-bg rounded-full p-1 shadow-sm flex-shrink-0 mt-0.5">
                                     <i data-feather="check" class="text-white w-3.5 h-3.5" stroke-width="4"></i>
                                 </div>
-                                <span class="text-gray-700 font-semibold text-sm md:text-base">60-day risk-free money-back guarantee</span>
+                                <span class="text-gray-700 font-semibold text-sm md:text-base">60 Tage risikofreie Geld-zurück-Garantie</span>
                             </div>
                         </div>
 
-                        <!-- Country Selection Card -->
+                        <!-- CTA Box -->
                         <div class="cta-box border border-gray-100 max-w-lg">
-                            <p class="font-bold text-gray-400 uppercase tracking-widest text-[10px] mb-5 text-center lg:text-left">Select your shipping destination to activate offer:</p>
+                            <p class="font-bold text-gray-400 uppercase tracking-widest text-[10px] mb-5 text-center lg:text-left">Wählen Sie Ihr Lieferland:</p>
                             
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                <a href="https://mwebora.com/12234/375/7/??" class="btn-shine flex items-center justify-between px-5 py-3.5 brand-bg text-white rounded-xl font-bold text-sm">
-                                    <span>United States</span>
+                                <a href="https://mwebora.com/12231/183/3/?" class="btn-shine flex items-center justify-between px-5 py-3.5 brand-bg text-white rounded-xl font-bold text-sm">
+                                    <span>Deutschland</span>
                                     <i data-feather="chevron-right" class="w-4 h-4"></i>
                                 </a>
-                                <a href="https://mwebora.com/12234/375/7/??" class="btn-shine flex items-center justify-between px-5 py-3.5 brand-bg text-white rounded-xl font-bold text-sm">
-                                    <span>Canada</span>
+                                <a href="https://mwebora.com/12231/183/3/?" class="btn-shine flex items-center justify-between px-5 py-3.5 brand-bg text-white rounded-xl font-bold text-sm">
+                                    <span>Österreich</span>
                                     <i data-feather="chevron-right" class="w-4 h-4"></i>
                                 </a>
-                                <a href="https://mwebora.com/12234/375/7/??" class="btn-shine flex items-center justify-between px-5 py-3.5 brand-bg text-white rounded-xl font-bold text-sm">
-                                    <span>Australia</span>
-                                    <i data-feather="chevron-right" class="w-4 h-4"></i>
-                                </a>
-                                <a href="https://mwebora.com/12234/375/7/??" class="btn-shine flex items-center justify-between px-5 py-3.5 brand-bg text-white rounded-xl font-bold text-sm">
-                                    <span>United Kingdom</span>
+                                <a href="https://mwebora.com/12231/183/3/?" class="btn-shine flex items-center justify-between px-5 py-3.5 brand-bg text-white rounded-xl font-bold text-sm">
+                                    <span>Schweiz</span>
                                     <i data-feather="chevron-right" class="w-4 h-4"></i>
                                 </a>
                             </div>
@@ -221,10 +156,10 @@
                     <!-- DESKTOP ONLY PRODUCT IMAGE -->
                     <div class="lg:col-span-5 hidden lg:flex justify-center items-center reveal order-2">
                         <div class="relative flex justify-center items-center">
-                            <div class="absolute w-[400px] h-[400px] brand-bg/5 rounded-full blur-[80px] -z-10"></div>
-                            <img src="images/vitalislim1.png" 
-                                 alt="VitaliSlim Bottle" 
-                                 class="w-full max-w-[420px] h-auto drop-shadow-[0_45px_45px_rgba(0,0,0,0.12)] float-anim">
+                            <div class="absolute w-[400px] h-[400px] brand-bg/10 rounded-full blur-[80px] -z-10"></div>
+                            <img src="imgi_4_3 Bottles.png" 
+                                 alt="[Bild von StoffwechselBalance Packung]" 
+                                 class="w-full max-w-[480px] h-auto drop-shadow-[0_45px_45px_rgba(21,128,61,0.18)] float-anim">
                         </div>
                     </div>
                     
@@ -233,43 +168,43 @@
         </section>
     </main>
 
-    <footer class="bg-[#0a0d14] text-gray-400 py-16 lg:py-20 border-t border-gray-900">
+    <footer class="bg-[#051109] text-gray-400 py-16 lg:py-20 border-t border-green-900/30">
         <div class="container mx-auto px-6 text-center text-sm">
-            <img src="images/vitalislim-logo.png" alt="VitaliSlim" class="h-7 mx-auto mb-6 opacity-60">
+            <div class="text-white font-black italic text-xl mb-6 opacity-60">StoffwechselBalance™</div>
             
             <div class="flex justify-center mb-10">
                 <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-5 py-2 rounded-full">
-                    <i data-feather="shield" class="w-4 h-4 text-[#239F47]"></i>
-                    <span class="text-[9px] font-bold uppercase tracking-widest text-gray-300">Authorized VitaliSlim Global Retailer</span>
+                    <i data-feather="shield" class="w-4 h-4 brand-text"></i>
+                    <span class="text-[9px] font-bold uppercase tracking-widest text-gray-300">Autorisierter StoffwechselBalance™ Händler</span>
                 </div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16 text-[11px] max-w-5xl mx-auto text-center lg:text-left border-y border-white/5 py-12">
                 <div class="space-y-4">
-                    <p class="text-white uppercase font-black text-[9px] tracking-widest">Returns Center</p>
+                    <p class="text-white uppercase font-black text-[9px] tracking-widest">Rücksendezentrum</p>
                     <p class="leading-relaxed">19655 East 35th Drive, Suite #100<br>Aurora, CO. 80011, USA</p>
                 </div>
                 <div class="space-y-4">
-                    <p class="text-white uppercase font-black text-[9px] tracking-widest">Customer Support</p>
-                    <p class="leading-relaxed">Order Support: (302) 200-3480<br>support@infinityhealthlabs.com</p>
+                    <p class="text-white uppercase font-black text-[9px] tracking-widest">Kundensupport</p>
+                    <p class="leading-relaxed">Bestell-Support: (302) 200-3480<br>support@infinityhealthlabs.com</p>
                 </div>
                 <div class="space-y-4">
-                    <p class="text-white uppercase font-black text-[9px] tracking-widest">Policies</p>
-                    <p class="leading-relaxed">60-Day Satisfaction Guarantee<br>Safe & Natural Ingredients</p>
+                    <p class="text-white uppercase font-black text-[9px] tracking-widest">Richtlinien</p>
+                    <p class="leading-relaxed">60-Tage Zufriedenheitsgarantie<br>Sichere & Natürliche Inhaltsstoffe</p>
                 </div>
             </div>
             
             <div class="flex justify-center flex-wrap gap-x-8 gap-y-4 mb-10 text-[10px] font-bold uppercase tracking-widest">
-                <button onclick="openModal('terms')" class="hover:text-white transition-colors">Terms of Sale</button>
-                <button onclick="openModal('privacy')" class="hover:text-white transition-colors">Privacy Policy</button>
-                <button onclick="openModal('shipping')" class="hover:text-white transition-colors">Shipping Policy</button>
-                <button onclick="openModal('returns')" class="hover:text-white transition-colors">Refund Policy</button>
+                <button onclick="openModal('terms')" class="hover:text-white transition-colors">Verkaufsbedingungen</button>
+                <button onclick="openModal('privacy')" class="hover:text-white transition-colors">Datenschutz</button>
+                <button onclick="openModal('shipping')" class="hover:text-white transition-colors">Versandrichtlinien</button>
+                <button onclick="openModal('returns')" class="hover:text-white transition-colors">Erstattung</button>
             </div>
 
             <div class="text-[10px] text-gray-600 max-w-4xl mx-auto space-y-4 leading-relaxed opacity-80 border-t border-white/5 pt-8">
-                <p><strong>FDA Compliance Disclaimer:</strong> These statements have not been evaluated by the Food and Drug Administration. VitaliSlim™ is a weight management support supplement. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
-                <p>The information on this website is for informational purposes only and is not intended as medical advice. Always consult with a healthcare professional before starting any new supplement or dietary program. Results may vary depending on individual metabolism and consistency.</p>
-                <p class="opacity-40">&copy; 2025 VitaliSlim. All rights reserved.</p>
+                <p><strong>Haftungsausschluss:</strong> Diese Website ist nicht Teil von Google™ oder Meta Inc. StoffwechselBalance™ ist ein Nahrungsergänzungsmittel zur Unterstützung des Gewichtsmanagements. Diese Aussagen wurden nicht von der FDA oder lokalen Behörden bewertet. Dieses Produkt ist nicht dazu bestimmt, Krankheiten zu diagnostizieren, zu behandeln, zu heilen oder zu verhindern.</p>
+                <p>Die Informationen auf dieser Website dienen ausschließlich Informationszwecken und sind nicht als medizinischer Rat gedacht. Konsultieren Sie immer einen Arzt, bevor Sie ein neues Nahrungsergänzungsmittel oder Diätprogramm beginnen.</p>
+                <p class="opacity-50">&copy; 2025 StoffwechselBalance™. Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </footer>
@@ -281,7 +216,7 @@
             <div class="flex min-h-full items-center justify-center p-4">
                 <div class="relative transform overflow-hidden rounded-[2rem] bg-white text-left shadow-2xl transition-all sm:w-full sm:max-w-2xl max-h-[80vh] flex flex-col">
                     <div class="bg-white px-8 py-6 border-b border-gray-100 flex justify-between items-center sticky top-0 z-20">
-                        <h3 class="text-lg font-extrabold text-gray-900 tracking-tight" id="modal-title">Legal Details</h3>
+                        <h3 class="text-lg font-extrabold text-gray-900 tracking-tight" id="modal-title">Rechtliche Details</h3>
                         <button type="button" onclick="closeModal()" class="rounded-full p-2 hover:bg-gray-100 transition-colors">
                             <i data-feather="x" class="h-5 w-5"></i>
                         </button>
@@ -290,7 +225,7 @@
                         <div id="modal-content-area"></div>
                     </div>
                     <div class="px-8 py-5 bg-gray-50 flex justify-end">
-                        <button type="button" onclick="closeModal()" class="brand-bg px-8 py-2.5 rounded-xl text-sm font-bold text-white shadow-lg">Close</button>
+                        <button type="button" onclick="closeModal()" class="brand-bg px-8 py-2.5 rounded-xl text-sm font-bold text-white shadow-lg">Schließen</button>
                     </div>
                 </div>
             </div>
@@ -314,39 +249,33 @@
 
         const modalData = {
             terms: { 
-                title: "Terms & Conditions", 
+                title: "Allgemeine Geschäftsbedingungen", 
                 content: `
-                    <h4>INTRODUCTION</h4>
-                    <p>This Agreement contains the complete terms and conditions that apply to you in joining, buying, and all other activities on our website. By using this site, you agree to be bound by these terms.</p>
-                    <h4>USE OF THE SITE</h4>
-                    <p>You must be 18 years or older to use our services. You are prohibited from posting false information, manipulating prices, or interfering with other users' listings.</p>
-                    <h4>PAYMENTS</h4>
-                    <p>VitaliSlim reserves the right to deny or cancel orders at its discretion, including for typographical errors or incorrect pricing.</p>
+                    <h4>EINLEITUNG</h4>
+                    <p>Diese Vereinbarung enthält die vollständigen Bedingungen, die für Sie gelten, wenn Sie unsere Website nutzen oder Einkäufe tätigen.</p>
+                    <h4>NUTZUNG DER SEITE</h4>
+                    <p>Sie müssen mindestens 18 Jahre alt sein, um unsere Dienste zu nutzen.</p>
                 ` 
             },
             privacy: { 
-                title: "Privacy Policy", 
+                title: "Datenschutzrichtlinie", 
                 content: `
-                    <h4>DATA COLLECTION</h4>
-                    <p>We collect personal information such as name, address, and billing details to manage your account and process orders. We use cookies to improve your user experience and for analytical purposes.</p>
-                    <h4>SECURITY</h4>
-                    <p>We implement strict security measures to protect your data, though we cannot guarantee 100% prevention of illegal third-party access.</p>
+                    <h4>DATENERFASSUNG</h4>
+                    <p>Wir erheben personenbezogene Daten wie Name und Adresse, um Ihre Bestellung zu bearbeiten. Wir verwenden Cookies, um die Benutzererfahrung zu verbessern.</p>
                 ` 
             },
             shipping: { 
-                title: "Shipping Policy", 
+                title: "Versandrichtlinien", 
                 content: `
-                    <h4>PROCESS</h4>
-                    <p>Orders are shipped automatically after payment confirmation. You will receive a tracking number within 60 hours.</p>
-                    <h4>ESTIMATED TIMES</h4>
-                    <ul><li>USA: 5-7 business days.</li><li>International: 10-15 business days.</li></ul>
+                    <h4>PROZESS</h4>
+                    <p>Bestellungen werden nach Zahlungsbestätigung automatisch versandt. Sie erhalten innerhalb von 60 Stunden eine Tracking-Nummer.</p>
                 ` 
             },
             returns: { 
-                title: "Refund Policy", 
+                title: "Erstattungsrichtlinie", 
                 content: `
-                    <h4>60-DAY GUARANTEE</h4>
-                    <p>If you aren't 100% satisfied, you can request a full refund within 60 days of the shipping date. Bottles must be returned to our warehouse at 19655 East 35th Drive, Suite #100, Aurora, CO. 80011, USA.</p>
+                    <h4>60-TAGE GARANTIE</h4>
+                    <p>Wenn Sie nicht zu 100% zufrieden sind, können Sie innerhalb von 60 Tagen nach dem Versanddatum eine volle Rückerstattung beantragen.</p>
                 ` 
             }
         };
@@ -357,10 +286,13 @@
                 modalTitle.innerText = data.title;
                 modalContent.innerHTML = data.content;
                 modal.classList.remove('hidden');
-                document.body.classList.add('modal-open');
+                document.body.classList.add('overflow-hidden');
             }
         }
-        function closeModal() { modal.classList.add('hidden'); document.body.classList.remove('modal-open'); }
+        function closeModal() { 
+            modal.classList.add('hidden'); 
+            document.body.classList.remove('overflow-hidden'); 
+        }
         document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
     </script>
 </body>
